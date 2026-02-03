@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home Page - Elie Kande Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13b6ec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#101d22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+        .grid-pattern {
+            background-image: radial-gradient(circle, #13b6ec22 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<div class="px-4 md:px-20 lg:px-40 flex justify-center py-2 border-b border-solid border-slate-200 dark:border-[#283539] sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap px-4 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] font-display">Elie Kande</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Accueil</a>
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Projets</a>
+<a class="text-slate-700 dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-slate-900 text-sm font-bold leading-normal tracking-[0.015em] font-display hover:opacity-90 transition-opacity">
+<span class="truncate">Me contacter</span>
+</button>
+</div>
+</header>
+</div>
+</div>
+<!-- Hero Section -->
+<div class="px-4 md:px-20 lg:px-40 flex justify-center py-5 md:py-10 grid-pattern">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="@container">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-start justify-end px-6 pb-12 @[480px]:px-12 border border-slate-200 dark:border-[#283539] shadow-2xl overflow-hidden relative" data-alt="Modern server room with cyan and green networking lights" style='background-image: linear-gradient(rgba(16, 29, 34, 0.4) 0%, rgba(16, 29, 34, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJL9p3mymMEUSSnW0MaPeiDCrDcb9787mYXW-kzAsFesVKKnDeJ-DzUMKaTDDj5pTY85C3MilDDIKq--_Rfyr4ftHyuZpolUFnhOeY6fRub38AQtnBf_i2MJhSnzVAkGhSvOvAtgYb0oGsXUY9OVio0EcdMYAMU46mbciJnRbFL-rJEood19dfNRl9A-NXF0L0fD4bDsu8HOPfKQAS6DU1j7NxCroRbmHaiJhtzmCpXGX8CqeNVHIJBBA9E7cuIEUgS27H4_LfFZeB");'>
+<div class="flex flex-col gap-4 text-left relative z-10 max-w-2xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl font-display">
+                                        Elie Kande - Expert en Cybersécurité Offensive &amp; Défensive
+                                    </h1>
+<h2 class="text-slate-200 text-lg font-normal leading-relaxed @[480px]:text-xl">
+                                        Sécurisation d'infrastructures critiques, audit de vulnérabilités et expertise réseaux haute performance.
+                                    </h2>
+</div>
+<div class="flex-wrap gap-4 flex relative z-10">
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-slate-900 text-base font-bold leading-normal tracking-[0.015em] font-display hover:brightness-110 transition-all">
+<span class="truncate">Voir mes compétences</span>
+</button>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold leading-normal tracking-[0.015em] font-display hover:bg-white/20 transition-all">
+<span class="truncate">Me contacter</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Expertise Header -->
+<div class="px-4 md:px-20 lg:px-40 flex justify-center pt-10">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex items-center gap-2 px-4">
+<span class="h-1 w-12 bg-primary rounded-full"></span>
+<h2 class="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold leading-tight tracking-[-0.015em] font-display">Domaines d'Expertise</h2>
+</div>
+</div>
+</div>
+<!-- Expertise Grid -->
+<div class="px-4 md:px-20 lg:px-40 flex justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+<!-- Offensive -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#3b4d54] bg-white dark:bg-[#1c2427] p-6 flex-col hover:border-primary transition-colors group">
+<div class="text-primary group-hover:scale-110 transition-transform" data-size="32px">
+<span class="material-symbols-outlined !text-[32px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight font-display">Cybersecurity Offensive</h2>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Tests d'intrusion (Pentesting), Red Teaming et exploitation de vulnérabilités applicatives.</p>
+</div>
+</div>
+<!-- Defensive -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#3b4d54] bg-white dark:bg-[#1c2427] p-6 flex-col hover:border-primary transition-colors group">
+<div class="text-primary group-hover:scale-110 transition-transform" data-size="32px">
+<span class="material-symbols-outlined !text-[32px]">security</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight font-display">Cybersecurity Defensive</h2>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Mise en place de SOC, configuration SIEM, durcissement système et réponse aux incidents.</p>
+</div>
+</div>
+<!-- Networks -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#3b4d54] bg-white dark:bg-[#1c2427] p-6 flex-col hover:border-primary transition-colors group">
+<div class="text-primary group-hover:scale-110 transition-transform" data-size="32px">
+<span class="material-symbols-outlined !text-[32px]">lan</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight font-display">Networks</h2>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Conception d'architectures réseaux sécurisées, protocoles de routage et pare-feux nouvelle génération.</p>
+</div>
+</div>
+<!-- Linux -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#3b4d54] bg-white dark:bg-[#1c2427] p-6 flex-col hover:border-primary transition-colors group">
+<div class="text-primary group-hover:scale-110 transition-transform" data-size="32px">
+<span class="material-symbols-outlined !text-[32px]">terminal</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight font-display">Linux Administration</h2>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Maîtrise avancée des environnements Debian/CentOS, scripting bash et automatisation.</p>
+</div>
+</div>
+<!-- Cloud -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#3b4d54] bg-white dark:bg-[#1c2427] p-6 flex-col hover:border-primary transition-colors group">
+<div class="text-primary group-hover:scale-110 transition-transform" data-size="32px">
+<span class="material-symbols-outlined !text-[32px]">cloud_lock</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight font-display">Cloud Security</h2>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Sécurisation des infrastructures AWS/Azure et gestion des identités (IAM).</p>
+</div>
+</div>
+<!-- Extra Component/Consulting -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-[#3b4d54] bg-white dark:bg-[#1c2427] p-6 flex-col hover:border-primary transition-colors group">
+<div class="text-primary group-hover:scale-110 transition-transform" data-size="32px">
+<span class="material-symbols-outlined !text-[32px]">analytics</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight font-display">Audit &amp; Conseil</h2>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Analyses de risques ISO 27001 et conformité technique pour entreprises.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Why Choose section -->
+<div class="px-4 md:px-20 lg:px-40 flex justify-center py-10">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col gap-10 px-4 py-10 @container bg-slate-100 dark:bg-primary/5 rounded-2xl">
+<div class="flex flex-col gap-4">
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl font-display">
+                                Pourquoi choisir mon expertise ?
+                            </h1>
+<p class="text-slate-700 dark:text-slate-300 text-base font-normal leading-normal max-w-[720px]">
+                                Une approche rigoureuse et une méthodologie éprouvée pour protéger vos actifs numériques contre les cyber-menaces les plus sophistiquées.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg shadow-lg border border-slate-200 dark:border-white/10" data-alt="Digital representation of complex network connections" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC64EVDjIEs4x5higZapvhaPYC3Mao1bWVGNauw6V33LTfv8dE3dCA52rvz9Hg0vti3CIFIKGHdDmAEYwpBkmethP9RyM42IuEii2Vk5pPNGC3-gJ-Kih9iOPsBntt_vtwFyT2fJ0ZAbZ1GH4NAl2bPvuXXKWnaz4M2jthIraFCMd0XcYA7bgl3TZ2hsAqGwSL5fz2CsXnaoDtrh6XnzmHvldY0xdPmxTK5EXPRtyDKKWdMmjy3jxOEV1QqFVT56CMvpzOwrJ8fiFbl");'></div>
+<div class="mt-2">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal font-display">Rigueur Technique</p>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Une analyse approfondie au-delà des scans automatiques.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg shadow-lg border border-slate-200 dark:border-white/10" data-alt="Futuristic cyber security interface dashboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBt4hdyXO7uvNg_Bkgv0J9F3A6gtDp5YkeCQQDfFv71EiyodpukyHlh2ojaLQ_HSyEbmz3okuglmXud4yz5UGOwAVqkFwMsvtt2sWRyIZhjNKH9Pow6nYmzH5DojrZUhVEi5Esp15OiFkxYBnUuVdE0yI8V8x_5kdcP0pBlomD7IsmnLjcwQjl_DAJZ_O1w-ZO9HSlu36vRCD3fvedyaqQ7iMJvTR4_twPRR21PJjKxmsgmMcsbF5ifEyWeJwPkQGH7qeZI2p5xbrKj");'></div>
+<div class="mt-2">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal font-display">Veille Constante</p>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Mise à jour quotidienne sur les nouvelles menaces zero-day.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg shadow-lg border border-slate-200 dark:border-white/10" data-alt="Blue glowing planet earth with data lines" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBl3Iel-tdNfSruCMyGYHr4AXjaHzqqTnTRszqD26lgRKKdBeDOMLNpZxTP3PPXNGcwKzvTufrZdIXOQudwwcgnr1ZfX0va-hGX99F3qrlvN57zviC5MI_8eJLIQVxTYtCEwucU6DzZ26npfTizj6fzFz74gc1Y8Q7d3Fl-BuhxtBabpITD9oj8M9HnCmgl4lN6E54PgHCR9UYwxpudT62xI3MgVQ4D8kfy7xqiXLuBBk53Qyym-ICwyv8ES9zo4lotXMdsTJSfC3Ot");'></div>
+<div class="mt-2">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal font-display">Approche Stratégique</p>
+<p class="text-slate-600 dark:text-[#9db2b9] text-sm font-normal leading-normal">Des solutions de sécurité alignées sur vos enjeux métiers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Section (Generic placeholder for completeness) -->
+<footer class="px-4 md:px-20 lg:px-40 flex justify-center py-10 border-t border-slate-200 dark:border-[#283539]">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 text-center md:text-left">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white font-bold font-display">Elie Kande</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm italic">Cybersecurity &amp; Networking Architect</p>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">terminal</span></a>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs">© 2024 Elie Kande. Tous droits réservés.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
